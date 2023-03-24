@@ -79,5 +79,12 @@ function square() {
     let area = Math.PI * radius * radius;
     return area;
   }
-  
+
 console.log(areaOfCircle(10))
+
+const loop = (test) =>{
+    let sum = 0
+    for(let i = 0; i < test ; i++ ){
+        return sum
+    }
+}
