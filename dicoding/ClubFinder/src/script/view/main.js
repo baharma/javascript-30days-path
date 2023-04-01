@@ -13,11 +13,13 @@ const main = function () {
     results.forEach(function (club) {
       let clubElement = document.createElement('div');
       clubElement.setAttribute('class', 'club');
+      
+      ({name,fanArt,description} = club)
 
-      clubElement.innerHTML =`<img class="fan-art-club" src="${club.fanArt}" alt="fan art">
+      clubElement.innerHTML =`<img class="fan-art-club" src="${fanArt}" alt="fan art">
       <div class="club-info"> 
-      <h2>${club.name}</h2>
-      <p>${club.description}</p>
+      <h2>${name}</h2>
+      <p>${description}</p>
       </div>
     ` ;
       clubListElement.appendChild(clubElement);
